@@ -16,8 +16,8 @@ class CreateMenuListsTable extends Migration
         Schema::create('menu_lists', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('tax');
-            $table->string('price');
+            $table->double('tax', 8,2);
+            $table->double('price', 8,2);
             $table->string('image_path');
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->on('categories')->references('id');
