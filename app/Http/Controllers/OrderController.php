@@ -15,7 +15,7 @@ class OrderController extends Controller
 
         if(!$request->filled('coupons')) {
             $coupon = 'No Coupon Code';
-        }elseif (!$request->coupons == "GO2018") {
+        }elseif ($request->coupons != "GO2018") {
             $coupon = 'Invalid Coupon Code';
         }
         else {

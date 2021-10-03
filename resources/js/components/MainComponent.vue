@@ -145,7 +145,7 @@
                                 </div>
                                 <div class="alert text-center"
                                 :class="localCoupon == 0.1 ? 'alert-success' : 'alert-danger'" role="alert">
-                                    {{ localCoupon == 0.1 ? 'Discounted by ' + Number(localDiscount).toFixed(2) : localCoupon }}
+                                    {{ localCoupon == 0.1 ? 'Discounted by &#8369;' + Number(localDiscount).toFixed(2) : localCoupon }}
                                 </div>
                                 <p class="mg-b-0">
                                     Customers Name: {{ localCustomer }}
